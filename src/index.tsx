@@ -1,4 +1,9 @@
-import * React from 'react'
-import ReactDOM from 'react-dom'
+import * as React from 'react'
+import { createRoot } from 'react-dom/client';
+import './style.css';
 
-ReactDOM.render(<h1>Woohoo!</h1>, document.getElementById('root'))
+import App from "./components/App";
+
+const root = createRoot(document.getElementById('root'));
+
+root.render(<App />)
